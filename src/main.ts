@@ -9,3 +9,19 @@ const isOnline: boolean = true;
 console.log(`Name: ${name}`);
 console.log(`Age: ${age}`);
 console.log(`Online: ${isOnline}`);
+
+//!task-2
+
+interface Product {
+  readonly id: number;
+  title: string;
+  description?: string;
+}
+
+const product = {
+  id: 1,
+  title: "Tablet",
+  description: "Compact and fast",
+};
+
+console.log(`Product: ${JSON.stringify(product)}`);
