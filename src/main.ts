@@ -1,14 +1,11 @@
 import "./style.css";
 
-let age: number = 25;
-let mes: string = "Jacob";
+//!task-1
 
-interface User {
-  name: string;
-  age: number;
-}
+const name: string = "Alice";
+const age: number = 30;
+const isOnline: boolean = true;
 
-const users = {
-  name: "Ali",
-  age: 35,
-};
+console.log(`Name: ${name}`);
+console.log(`Age: ${age}`);
+console.log(`Online: ${isOnline}`);
