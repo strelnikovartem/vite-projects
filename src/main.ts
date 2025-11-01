@@ -48,7 +48,7 @@ console.log(`Products: ${JSON.stringify(products)}`);
 
 //!task-4
 
-function printUserInfo(name, age, email) {
+function printUserInfo(name: string, age: number, email?: string) {
   console.log("Name:", name);
   console.log("Age:", age);
   if (email) {
