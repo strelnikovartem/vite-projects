@@ -84,3 +84,15 @@ function getFirstElement(arr) {
 getFirstElement([1, 2, 3]); // 1
 getFirstElement(["a", "b", "c"]); // "a"
 getFirstElement([true, false, true]); // true
+
+//!task-7
+
+function getMessage() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Hello from TS");
+    }, 1000);
+  });
+}
+
+getMessage().then((result) => console.log(result));
