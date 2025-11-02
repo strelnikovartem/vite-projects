@@ -73,4 +73,4 @@ function logStatus(status: Status) {
   }
 }
 
-logStatus("loading");
+logStatus("error");
