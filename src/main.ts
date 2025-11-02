@@ -58,3 +58,19 @@ function printUserInfo(name: string, age: number, email?: string): void {
 
 printUserInfo("Alice", 30);
 printUserInfo("Bob", 25, "bob@mail.com");
+
+//!task-5
+
+type Status = "loading" | "success" | "error";
+
+function logStatus(status: Status) {
+  if (status === "loading") {
+    console.log("Loading...");
+  } else if (status === "success") {
+    console.log("Success!");
+  } else if (status === "error") {
+    console.log("Something went wrong");
+  }
+}
+
+logStatus("loading");
