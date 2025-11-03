@@ -87,6 +87,8 @@ console.log(getFirstElement([true, false, true])); // true
 
 //!task-7
 
+//!task-7
+
 function getMessage() {
   return new Promise((resolve) => {
     setTimeout(() => {
