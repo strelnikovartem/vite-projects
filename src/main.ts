@@ -81,9 +81,9 @@ function getFirstElement(arr: any[]) {
   return arr[0];
 }
 
-getFirstElement([1, 2, 3]); // 1
-getFirstElement(["a", "b", "c"]); // "a"
-getFirstElement([true, false, true]); // true
+console.log(getFirstElement([1, 2, 3])); // 1
+console.log(getFirstElement(["a", "b", "c"])); // "a"
+console.log(getFirstElement([true, false, true])); // true
 
 //!task-7
 
@@ -97,17 +97,17 @@ function getMessage() {
 
 getMessage().then((result) => console.log(result));
 
-//!task-8
+// //!task-8
 
-import axios from "axios";
+// import axios from "axios";
 
-async function fetchPosts() {
-  const response = await axios.get(
-    "<https://jsonplaceholder.typicode.com/posts>"
-  );
-  return response.data;
-}
+// async function fetchPosts() {
+//   const response = await axios.get(
+//     "<https://jsonplaceholder.typicode.com/posts>"
+//   );
+//   return response.data;
+// }
 
-fetchPosts().then((posts) => {
-  console.log(posts[0].title);
-});
+// fetchPosts().then((posts) => {
+//   console.log(posts[0].title);
+// });
