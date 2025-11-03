@@ -77,7 +77,7 @@ logStatus("error");
 
 //!task-6
 
-function getFirstElement(arr: Arr[]) {
+function getFirstElement(arr: any[]) {
   return arr[0];
 }
 
