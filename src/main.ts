@@ -63,7 +63,7 @@ printUserInfo("Bob", 25, "bob@mail.com");
 
 type Status = "loading" | "success" | "error";
 
-function logStatus(status: Status) {
+function logStatus(status: Status): void {
   if (status === "loading") {
     console.log("Loading...");
   } else if (status === "success") {
