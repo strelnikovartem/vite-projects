@@ -116,7 +116,7 @@ fetchPosts().then((posts) => {
 
 //!
 
-function foo<T>(value) {
+function foo<T>(value: T) {
   console.log(value);
 }
 
@@ -124,7 +124,7 @@ foo<number>(5);
 
 foo<string>("heiio");
 
-foo(false);
+foo<boolean>(false);
 
 foo([1, 2]);
 
