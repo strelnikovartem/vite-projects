@@ -103,7 +103,14 @@ getMessage().then((result) => console.log(result));
 
 import axios from "axios";
 
-async function fetchPosts(): Promise<> {
+interface Response {
+  userId: number;
+  id: number;
+  title: string;
+  body: string;
+}
+
+async function fetchPosts(): Promise<Response[]> {
   const response = await axios.get(
     "<https://jsonplaceholder.typicode.com/posts>"
   );
