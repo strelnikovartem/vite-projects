@@ -114,4 +114,14 @@ fetchPosts().then((posts) => {
   console.log(posts[0].title);
 });
 
-//!???$$%^^$#@!
+//!
+
+function foo(value) {
+  console.log(value);
+}
+
+foo(5);
+
+foo("heiio");
+
+foo(false);
