@@ -89,7 +89,7 @@ console.log(getFirstElement<boolean>([true, false, true])); // true
 
 //!task-7
 
-function getMessage() {
+function getMessage(): Promise<string> {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("Hello from TS");
