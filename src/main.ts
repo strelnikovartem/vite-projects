@@ -110,8 +110,8 @@ interface Response {
   body: string;
 }
 
-async function fetchPosts(): Promise<Response[]> {
-  const response = await axios.get(
+async function fetchPosts() {
+  const response = await axios.get<Response>(
     "<https://jsonplaceholder.typicode.com/posts>"
   );
   return response.data;
