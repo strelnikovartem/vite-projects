@@ -129,3 +129,24 @@ foo<boolean>(false);
 foo([1, 2]);
 
 foo({});
+
+//?
+
+interface List<T> {
+  items: T[];
+  getItem: (index: number) => T;
+}
+
+const numberList: List<number> = {
+  items: [1, 2, 3],
+  getItem(index) {
+    return this.items[index];
+  },
+};
+
+const stringList: List<string> = {
+  items: ["Alice", "Bob"],
+  getItem(index) {
+    return this.items[index];
+  },
+};
