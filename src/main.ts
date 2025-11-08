@@ -116,12 +116,16 @@ fetchPosts().then((posts) => {
 
 //!
 
-function foo(value) {
+function foo<T>(value) {
   console.log(value);
 }
 
-foo(5);
+foo<number>(5);
 
-foo("heiio");
+foo<string>("heiio");
 
 foo(false);
+
+foo([1, 2]);
+
+foo({});
